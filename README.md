@@ -1,4 +1,4 @@
-# LikeZelda
+# LikeZelda [![Build Status](https://travis-ci.org/like-zelda/like-zelda.svg)](https://travis-ci.org/like-zelda/like-zelda)
 
 A zelda clone to explore MonoGame capabilities.
 
@@ -15,8 +15,8 @@ project files when I start to play with cross-platforming.
 
 For now, the instructions are:
 
-  git submodules init
-  git submodules update
+    git submodules init
+    git submodules update
 
 ## Build
 
