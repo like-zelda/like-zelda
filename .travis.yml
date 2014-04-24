@@ -4,5 +4,10 @@ install:
   - sudo apt-get install mono-devel mono-gmcs nunit-console
 
 script:
-  - xbuild CI.proj | tee >&2 | grep -q "0 Error(s)"
+  #- mono ./Protobuild.exe
+  #- xbuild /t:Build /property:Configuration=Debug LikeZelda.Windows.sln
+  #- xbuild /t:Build /property:Configuration=Debug LikeZelda.Linux.sln
+  #- xbuild /t:Build /property:Configuration=Debug LikeZelda.MacOs.sln
+  #- xbuild /t:Build /property:Configuration=Debug LikeZelda.Web.sln
+  - xbuild CI.proj
   - nunit-console ./LikeZelda.Tests/bin/Debug/LikeZeldaTests.dll
